@@ -109,12 +109,12 @@ dl() {
     ok "$(basename $dst)"
 }
 
-dl "bin/prayercli.sh"           /usr/local/lib/prayercli/prayercli.sh
-dl "lib/prayer_times.py"        /usr/local/lib/prayercli/prayer_times.py
-dl "lib/input_control.sh"       /usr/local/lib/prayercli/input_control.sh
-dl "lib/prayer_screen.sh"       /usr/local/lib/prayercli/prayer_screen.sh
-dl "lib/download_azan.sh"       /usr/local/lib/prayercli/download_azan.sh
-dl "systemd/prayercli.service"  /etc/systemd/system/prayercli.service
+dl "prayercli.sh"           /usr/local/lib/prayercli/prayercli.sh
+dl "prayer_times.py"        /usr/local/lib/prayercli/prayer_times.py
+dl "input_control.sh"       /usr/local/lib/prayercli/input_control.sh
+dl "prayer_screen.sh"       /usr/local/lib/prayercli/prayer_screen.sh
+dl "download_azan.sh"       /usr/local/lib/prayercli/download_azan.sh
+dl "prayercli.service"  /etc/systemd/system/prayercli.service
 
 # ── Config ────────────────────────────────────────────────────
 step "Writing config"
