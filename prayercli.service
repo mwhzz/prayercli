@@ -1,0 +1,15 @@
+[Unit]
+Description=PrayerCLI — Islamic prayer time enforcer
+After=graphical.target
+Wants=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/lib/prayercli/prayercli.sh
+Restart=always
+RestartSec=10
+StandardOutput=append:/var/log/prayercli/enforcer.log
+StandardError=append:/var/log/prayercli/enforcer.log
+
+[Install]
+WantedBy=graphical.target
